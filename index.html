@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Zomato Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+        }
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        /* Header */
+        header {
+            background: #e23744;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      background: #121212;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+        /* Search */
+        .search-box {
+            text-align: center;
+            margin: 20px;
+        }
 
-    .card {
-      text-align: center;
-      max-width: 350px;
-      width: 100%;
-    }
+        .search-box input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
 
-    .profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+        /* Restaurant Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-    h1 {
-      margin: 15px 0 5px;
-      letter-spacing: 2px;
-    }
+        .card {
+            background: white;
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
 
-    h3 {
-      margin: 0;
-      font-weight: normal;
-      color: #bbb;
-    }
+        .card img {
+            width: 100%;
+            height: 150px;
+        }
 
-    .icons {
-      margin: 20px 0;
-    }
+        .card h3 {
+            margin: 10px;
+        }
 
-    .icons a {
-      color: white;
-      font-size: 22px;
-      margin: 0 10px;
-    }
+        .card p {
+            margin: 10px;
+            color: gray;
+        }
 
-    p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #ccc;
-    }
+        .btn {
+            background: #e23744;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            width: 90%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 30px;
-      background: white;
-      color: black;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+        .btn:hover {
+            background: #c72c3a;
+        }
+    </style>
 </head>
-
 <body>
 
-  <div class="card">
-     <img src="C:\Users\abhjk\OneDrive\602175664_18062704733560339_6910985868253046160_n (1).jpg"class="profile" alt="Profile">
-    <h1>ABHINANDAN KUMAR </h1>
-    <h3>DEVELOPER</h3>
+<header>
+    Zomato Clone 🍔
+</header>
 
-   <div class="icons">
-  <a href="https://twitter.com/@Abhinandan12065" target="_blank">
-    <i class="fa-brands fa-x-twitter"></i>
-  </a>
-
-  <a href="https://github.com/abhjkumar-tech" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/abhinandan-kumar-71b179297" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-  <a href="https://www.instagram.com/abhinandan_singh100/" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
+<div class="search-box">
+    <input type="text" placeholder="Search for restaurants or food...">
 </div>
 
+<div class="container">
 
-    <p>
-      Passionate about building impactful React web apps and eager to learn new technologies.
-    </p>
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="https://source.unsplash.com/250x150/?pizza">
+        <h3>Pizza Hut</h3>
+        <p>Pizza, Fast Food</p>
+        <button class="btn">Order Now</button>
+    </div>
 
-    <a href="file:///C:/Users/abhjk/Downloads/Abhinandan_Kumar_Colorful_Resume_with_Photo.pdf" class="btn">Resume</a>
-  </div>
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="https://source.unsplash.com/250x150/?burger">
+        <h3>Burger King</h3>
+        <p>Burgers, Snacks</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="https://source.unsplash.com/250x150/?biryani">
+        <h3>Biryani House</h3>
+        <p>Biryani, Indian</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+</div>
 
 </body>
 </html>
